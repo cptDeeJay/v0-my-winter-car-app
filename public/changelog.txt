@@ -1,0 +1,88 @@
+v.260108-02
+
+08.01.2026
+-Decreased wear rate of engine internals
+-Fixed Fleetari applying rusted GT special paint job
+-Fixed issues with Fireplaces or Grills not correctly heating up
+-Separated Sauna room temperature calculations from rest of the House heating
+-Fixed issue with Fleetari body repair breaking Bumpers and Grille parts
+-Fixed issue of used spare parts not spawning all the interior versions
+-Fixed issue with car interior materials not spawning GT versions properly
+(These changes might cause mismatch interior materials, re-purchase might be required)
+-Added Oil Pump and Timing Belt to Fleetari
+
+07.01.2026
+-Flattened some of those problematic snow bank colliders at the PSK parking lot
+
+06.01.2026
+-Added separate Warning Triangle
+-Fixed issue with Radio wiring
+-Fixed issue with not able to spawn Moose meat properly
+-Fixed issues with Racing Seats and Racing Harnesses (Re-purchase required)
+-Fixed issue with cross reference between CD Player and standard car Radio
+-Fixed various issues with Fire Extinguisher (Re-purchase required)
+-Increased House and Apartment insulation efficiency
+
+05.01.2026
+-Fixed issue with confiscated Taxi spawning at last saved location
+-Fleetari now paints plastic front facelift parts
+-Added voice for Flea Market owner
+-Fixed issue with Cops at Apartment door not giving an Arrest Warrant
+-Fixed issue with Racing Flywheel duplicating itself at save load
+-Fixed ID cross reference issue with Fuses
+-Fixed invisible CD Player
+
+04.01.2026
+-Fixed Headlight Assembly and Dashboard not turning into scrap
+-Possible fix for Fleetari not being able to install tires
+-Fixed issue with House fire affecting Apartment lights
+-Fixed Subwoofer Parcel Shelf not attaching
+-Fixed Helmet position not saving
+-Re-hired PSK workers, let me know if the PSK starts crashing again!
+-Fixed issue with Automatic gearbox not able to shift
+
+03.01.2026
+-Fixed missing collider of Ventilation box
+-Fixed possibility of drinking from several Juice bottles at the same time
+-Fixed issue with Heater hoses not being removable 
+-Fixed issue with Job salary increase not available - also increased the salary rise
+(Note that Player needs to work for another two weeks for salary increase to activate) 
+-Fixed issue being able to change gears even when manual Gear Lever was not installed
+-Fixed visual issue where 5-spd Gearbox lever did not move into 5th gear
+-Fixed issue with used Spoke wheels not saving correctly (You need to re-purchase)
+-Fixed issue with right side Headlight assembly not showing the installed Light Bulb
+-Added missing Fuel Filler for Bachglotz
+
+02.01.2026
+-Attempt to fix Sorbet issues once more
+-Fixed save data for some items/tools, their location might have reset
+
+01.01.2026
+-Fixed issues with Sorbett and Tractor engine shutoff / restart procedure
+-Fixed Subwoofers and Antennas order not delivering both pieces
+-Fixed Passenger Race Seat not included in the Order
+-Fixed CD audio not having sound in Taxi and Sorbett
+
+31.12.2025
+-Fixed Apartment Stove causing a kitchen fire in the House
+-Fixed issue with House phone cord affecting Apartment phone cord
+-Fixed some Phone audio clips not stopping when hanging up
+-Increased efficiency of Sorbett Block heater
+-Adjusted so that Problem doesn't become a problem in the Jail
+-Gearbox install requires now Block install first (to fix hierarchy issues)
+-Fixed bug with Block sometimes getting damaged when attached to Hoist or Car
+
+30.12.2025
+-Burger and Ala Carte seller are disabled temporarily to figure out PSK crashing
+-Fixed Wood Cutter breaking if attached to Tractor and Player goes too far
+-Improved some Sorbett colliders to lessen the possiblity of physics glitching
+-Fixed Ignition hole being available even when Steering Column was not installed
+-Fixed Glovebox being available even when Dashboard was not installed
+-Fixed Cottage Sauna stove not heating up the Sauna room
+-Fixed Corris having a Rear Window Heater when stated M in the Vinplate 
+-Added small delay to the Advert pile spawn
+-Fixed Permadeath not deleting save files
+-Fixed Car Shed doors getting stuck if closed
+-Fixed CD music being heard from long distances
+-Fixed floating Radio
+-Fixed House and Apartment Fuses cross referencing
