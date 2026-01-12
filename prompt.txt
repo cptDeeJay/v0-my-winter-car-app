@@ -1,0 +1,53 @@
+Create app for My Winter Car game with list of parts for Rivetta that the User is able to select already aquired parts
+
+Make it so the User can type phone number for parts with amout need to pay for each order, and option to check already received orders, sum all prices for orders not delivered yet
+
+Make it separate options, independed from each other
+
+Add new functionality, game world map with option to mark job location with description of job type and key locations (house, gas station etc)
+
+In place of Game World Map place map from the attached file,
+House, Gas Station etc. locations should be marked by default with no option for the User to set them by themself
+
+Add confetti effect if all Part Checklist items are selected
+Add number only input to Parts checklist with number of parts in inventory
+
+Remove Qty: add 2 buttons (+ and -) instead
+add on the bottom barely visible button to select all parts as compleated
+
+Acording to https://steamcommunity.com/sharedfiles/filedetails/?id=3634634893
+add new funtionality VIN Reader listing all options of the Rivett
+
+Modify input to 3 segment like in Guide
+
+Add Dark Mode
+
+Add option to extend / retract parts sections
+
+Add animation to extend/retract action
+
+Add small input box on the bottom of the view with calculator
+the user types equasion in form of string
+e.g. input "3*7" on the other side of the box result appears 21
+
+Move calculator to the front of the screen as separate widget moving with view of the page
+
+Add main page with links to each of tools
+on the main page add link to Steam Store with link to the game
+https://store.steampowered.com/app/4164420/My_Winter_Car/
+on the main page add section with popular guides https://steamcommunity.com/app/4164420/guides/?browsesort=trend&browsefilter=trend&requiredtags%5B0%5D=english&p=1
+furthermore add game changelog that, as it cannot be downloaded, add to the solution file changelog.txt that can be modified with latest changelog
+
+Try with embedding
+<iframe src="https://store.steampowered.com/widget/4164420/?t=My%20Winter%20Car%20is%20a%20first%20person%20survival%20game%20about%20owning%2C%20assembling%20and%20maintaining%20an%20old%20project%20car.%20You%20buy%20and%20sell%20all%20sorts%20of%20random%20parts%20for%20to%20build%20the%20car%20while%20trying%20to%20maintain%20your%20money%20situation." frameborder="0" width="646" height="190"></iframe>
+
+add night mode button to main page
+
+revert changes from v17
+-> What changes would you like me to revert? embed
+
+Add external file to config locations for gamemap
+
+Add to gamemap functionality to double click on the map to enter configuration mode
+Where you can add or delete locations
+
