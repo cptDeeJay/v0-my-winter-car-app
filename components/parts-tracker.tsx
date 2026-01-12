@@ -144,8 +144,8 @@ export function PartsTracker({ activeTab = "parts" }: PartsTrackerProps) {
   const [vinSegment2, setVinSegment2] = useState("") // Drive and colors (9 chars)
   const [vinSegment3, setVinSegment3] = useState("") // Equipment (8 chars)
 
-  const [calculatorInput, setCalculatorInput] = useState("")
-  const [calculatorResult, setCalculatorResult] = useState<string>("")
+  // const [calculatorInput, setCalculatorInput] = useState("")
+  // const [calculatorResult, setCalculatorResult] = useState<string>("")
 
   useEffect(() => {
     setMounted(true)
@@ -243,34 +243,34 @@ export function PartsTracker({ activeTab = "parts" }: PartsTrackerProps) {
     }
   }, [expandedSections, mounted])
 
-  useEffect(() => {
-    if (!calculatorInput.trim()) {
-      setCalculatorResult("")
-      return
-    }
+  // useEffect(() => {
+  //   if (!calculatorInput.trim()) {
+  //     setCalculatorResult("")
+  //     return
+  //   }
 
-    try {
-      // Sanitize input to only allow numbers, operators, parentheses, decimal points, and spaces
-      const sanitized = calculatorInput.replace(/[^0-9+\-*/().\s]/g, "")
+  //   try {
+  //     // Sanitize input to only allow numbers, operators, parentheses, decimal points, and spaces
+  //     const sanitized = calculatorInput.replace(/[^0-9+\-*/().\s]/g, "")
 
-      if (!sanitized) {
-        setCalculatorResult("")
-        return
-      }
+  //     if (!sanitized) {
+  //       setCalculatorResult("")
+  //       return
+  //     }
 
-      // Use Function constructor as a safer alternative to eval for math expressions
-      // eslint-disable-next-line no-new-func
-      const result = Function(`"use strict"; return (${sanitized})`)()
+  //     // Use Function constructor as a safer alternative to eval for math expressions
+  //     // eslint-disable-next-line no-new-func
+  //     const result = Function(`"use strict"; return (${sanitized})`)()
 
-      if (typeof result === "number" && !Number.isNaN(result)) {
-        setCalculatorResult(result.toString())
-      } else {
-        setCalculatorResult("Error")
-      }
-    } catch {
-      setCalculatorResult("Error")
-    }
-  }, [calculatorInput])
+  //     if (typeof result === "number" && !Number.isNaN(result)) {
+  //       setCalculatorResult(result.toString())
+  //     } else {
+  //       setCalculatorResult("Error")
+  //     }
+  //   } catch {
+  //     setCalculatorResult("Error")
+  //   }
+  // }, [calculatorInput])
 
   useEffect(() => {
     if (mounted) {
@@ -1409,7 +1409,8 @@ export function PartsTracker({ activeTab = "parts" }: PartsTrackerProps) {
         </CardContent>
       </Card>
 
-      <div className="mt-6 mb-4">
+      {/* FloatingCalculator component should be rendered here, outside the main Card, probably fixed to the bottom/side */}
+      {/* <div className="mt-6 mb-4">
         <div className="flex items-center gap-3 bg-muted/30 border rounded-lg p-3">
           <Input
             type="text"
@@ -1425,7 +1426,7 @@ export function PartsTracker({ activeTab = "parts" }: PartsTrackerProps) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="mt-4 text-center text-sm text-muted-foreground">
         <p>Progress is automatically saved to your browser</p>
